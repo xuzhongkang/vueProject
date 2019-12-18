@@ -61,7 +61,7 @@
     methods: {
       UserLogin() {
         UserLoginAction(this.loginInfoVo).then(res => {
-          if (this.loginInfoVo.name == "" || this.loginInfoVo.password == "") {
+          if (this.loginInfoVo.name === "" || this.loginInfoVo.password === "") {
             this.$Message.error("账号或密码不能为空!");
           }
           else if (res.data.code==200) {
