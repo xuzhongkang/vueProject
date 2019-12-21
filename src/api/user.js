@@ -7,13 +7,6 @@ export const UserQryAction = () => {
   })
 }
 
-export const UserQryByNoAction = () => {
-  return HttpRequest.request({
-    url: 'getOneUser',
-    method: 'get'
-  })
-}
-
 export const UserAddAction = (parameter) => {
   return HttpRequest.request({
     url: 'addUser',
