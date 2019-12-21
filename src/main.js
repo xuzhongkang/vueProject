@@ -9,7 +9,7 @@ import axios from "axios";
 // axios.defaults.baseURL = 'https://localhost:8888/api'
 
 // 将API方法绑定到全局,把axios挂载到vue构造函数的prototype属性上，组件中通过this.axios来拿到axios
-Vue.prototype.axios = axios
+Vue.prototype.$axios = axios
 //消息提示的环境配置
 Vue.config.productionTip = false
 
